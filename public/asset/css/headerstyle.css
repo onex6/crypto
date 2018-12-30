@@ -1,0 +1,207 @@
+
+
+body html{
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	background-color: #003449;
+
+
+}
+
+.navbar-brand{
+	font-family: 'Oleo Script', cursive;
+  color:#fcc500;
+  font-size: 25px;
+}
+.nav-link{
+	text-decoration: none;
+	font-family:;
+	text-align: center;
+	font-size: 1.2em;
+	color: #fff;
+	margin-left: 3px;
+	margin-top: 10px;
+	padding: 0px;
+}
+
+.nav-link:hover{
+	background-color: skyblue;
+}
+.navbar-brand{
+	color: #fff;
+}
+
+
+.btn-custom{
+	background-color: #008A68;
+	width: 160px;
+	border-radius: 20px;
+	text-align: center;
+	padding: 1px;
+	margin: auto;
+	margin-top: 8px;
+
+
+
+}
+
+#part1{
+	position: relative;
+	width: 100%;
+	min-height:750px;
+	background-image: url(/asset/img/bg.jpg);
+	background-color
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	
+}
+
+#part2{
+	width: 100%;
+	height: 500px;
+}
+
+
+.btn-warning{
+	position: absolute;
+	margin-top:115px;
+	margin-left: 45%;
+	border-radius: 5px;
+	padding: 15px;
+
+}
+
+
+#particles-js{
+position: absolute;
+width: 100%;
+height: 700px;
+background: $background
+}
+
+
+
+
+
+
+
+.partenaire{
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 50px;
+
+}
+
+
+  .crypto{
+  	font-family: 'Oleo Script', cursive;
+  color:#fcc500;
+  font-size: 50px;
+  }
+
+#cercle1, #cercle2, #cercle3{
+  border-radius:50%;
+  width:160px;
+  height:160px;
+  padding: 5px;
+  border:2px solid #679403;
+   margin: auto;
+}
+
+#cercle1:hover, #cercle2:hover, #cercle3:hover{
+	border:10px solid #008A68;
+}
+
+#cercle1{
+	background: url( /asset/img/change.png) no-repeat center center;
+}
+#cercle1:hover{
+	background: url( /asset/img/change1.png) no-repeat center center;
+}
+
+#cercle2{
+	background: url( /asset/img/secure.png) no-repeat center center;
+}
+#cercle2:hover{
+	background: url( /asset/img/secure1.png) no-repeat center center;
+}
+
+#cercle3{
+	background: url( /asset/img/satisfait.png) no-repeat center center;
+}
+#cercle3:hover{
+	background: url( /asset/img/satisfait1.png) no-repeat center center;
+}
+#about{
+	padding-top: 75px;
+	padding-bottom: 100px;
+	margin-top: 0px;
+	background-color: #ccc;
+}
+
+
+
+  @media only screen and (max-width:1300px){
+	#part1{
+	position: relative;
+	width: 100%;
+	min-height:250px;
+	background-image: url(/asset/img/bge.jpg);
+	background-color
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+	}
+
+	#part2{
+	width: 100%;
+	height: 250px;
+}
+	.btn-warning{
+	position: absolute;
+	margin-top: -15px;
+	margin-left: 25%;
+	border-radius: 5px;
+	padding: 15px;
+
+	}
+
+	#particles-js{
+	position: absolute;
+	width: 100%;
+	height: 250px;
+	background: $background
+	}
+
+
+.partenaire{
+	font-size: 35px;
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+
+}
+
+.partenaire{
+	font-size: 24px;
+
+	color: #fff;
+	text-transform: lowercase;
+	text-align: center;
+	padding-top: 25px;
+
+}
+
+
+  .crypto{
+  	font-family: 'Oleo Script', cursive;
+  color:#fcc500;
+  font-size: 60px;
+  }
+}
