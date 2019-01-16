@@ -1,6 +1,26 @@
 var express= require('express');
 var app=express();
-var cryptocontroller=require('./controllers/cryptocontroller');
+const http = require('http');
+var router=require('./controllers/router');
+var logger= require('morgan');
+var bodyParser = require('body-parser');
+
+
+	app.get('/', function(req,res){
+		res.render('home.ejs')
+	});
+
+	app.get('/faq', function(req,res){
+		res.render('faq')
+
+	});
+
+//log requests
+app.use(logger('dev'));
+
+//give server access to users imputs
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
 
 
 
@@ -11,10 +31,12 @@ app.set('view engine', 'ejs');
 //fichiers statiques
 app.use(express.static('./public'));
 
-//les controllers
-cryptocontroller(app);
 
 
 //port d'écoute
-app.listen(3000);
-console.log('serveur démarré sur le port 3000');
+const server = http.createServer(app);
+
+const ports = process.env.PORT || 3000;
+server.listen(ports, () =>{
+  console.log('serveur démarré sur le port ' + ports);
+});
